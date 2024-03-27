@@ -1,0 +1,850 @@
+@charset "UTF-8";
+
+
+
+html {
+    color: #776B5D;
+    background-color: #FEFCF3;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #776B5D;
+}
+
+img {
+    object-fit: cover;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+
+// wrapper
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+}
+
+
+
+// title
+.section-title {
+    text-align: left;
+    margin: 50px 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #776B5D;
+
+    span {
+        font-size: 1rem;
+        padding-left: 50px;
+    }
+}
+
+// btn
+.btn {
+    position: relative;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 300px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #DBA39A;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 5px 5px 13px 4px rgba(17, 17, 26, 0.18);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+    &::before,
+    &::after {
+        position: absolute;
+        bottom: 10px;
+        right: 65px;
+        height: 1px;
+        background: #fff;
+        content: '';
+    }
+
+    &::before {
+        width: 150px;
+        transform: translateY(-50%);
+    }
+
+    &::after {
+        width: 8px;
+        transform: translateY(-50%) rotate(45deg);
+        transform-origin: right center;
+    }
+
+}
+
+// content
+.content {
+    display: flex;
+    justify-content: space-between;
+
+
+    img {
+        width: 40%;
+    }
+
+    .text {
+        width: 60%;
+        margin: 50px;
+
+    }
+}
+
+// header
+
+#header {
+    background-color: #F0DBDB;
+    padding: 5px 100px;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        width: 100px;
+        padding: 10px;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            font-size: 20px;
+            color: #776B5D;
+            font-weight: bold;
+            padding-right: 50px;
+            line-height: 100px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+}
+
+// main-visual
+.mainvisual {
+    padding-top: 100px;
+
+    video {
+        width: 100%;
+        max-height: 90vh;
+        object-fit: cover;
+
+    }
+
+}
+
+// concept
+#concept {
+    margin-top: 100px;
+
+    img {
+        width: 50%;
+        height: 550px;
+    }
+
+}
+
+// NEWS
+#news {
+    margin-top: 100px;
+
+    img {
+        width: 50%;
+        height: 550px;
+    }
+
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 50px;
+
+
+
+        dt {
+            width: 30%;
+            text-align: right;
+            padding-right: 50px;
+            margin-bottom: 50px;
+            border-bottom: dashed 1px #776B5D;
+        }
+
+        dd {
+            width: 70%;
+            text-align: left;
+            margin-bottom: 50px;
+            border-bottom: dashed 1px #776B5D;
+        }
+
+
+    }
+}
+
+//lineup
+#lineup {
+    margin-top: 100px;
+    text-align: center;
+
+    img {
+        height: 30vw;
+        max-height: 400px;
+        min-height: 270px;
+    }
+
+    .btn {
+        display: inline-block;
+    }
+
+    .slick-slide {
+        margin-inline: 16px;
+    }
+}
+
+// contact
+#contact {
+    position: relative;
+    margin: 100px 0;
+
+    a {
+        display: inline;
+    }
+
+
+
+
+    img {
+        height: 250px;
+        border-radius: 10px;
+    }
+
+
+
+
+    .contact-text {
+        padding: 0 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        /* 画像の中央に配置するための変更 */
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+            margin-bottom: 10px;
+        }
+    }
+
+
+}
+
+
+
+
+// footer
+.footer {
+    background-color: #F0DBDB;
+    height: 80px;
+
+    p {
+        text-align: center;
+        line-height: 80px;
+    }
+}
+
+
+//concept.html
+.concept-page {
+    padding-top: 100px;
+
+    .concept-content {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 200px;
+            height: auto;
+            opacity: 20%;
+        }
+    }
+
+
+}
+
+// news.html
+.news-page {
+    padding-top: 100px;
+
+    .news-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 30%;
+            opacity: 20%;
+        }
+    }
+
+    .news-text {
+
+        background-color: #fff;
+        width: 50%;
+        padding: 100px;
+        border-radius: 50%;
+
+        h2 {
+            font-size: 1.2rem;
+            display: inline-block;
+            border-bottom: 3px solid #DBA39A;
+            margin-bottom: 30px;
+
+            span {
+                padding-left: 20px;
+            }
+
+
+        }
+
+
+    }
+
+
+}
+
+// lineup.html
+.lineup-page {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            width: 45%;
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+
+        p {
+            display: inline-block;
+            margin-top: 30px;
+            position: relative;
+
+
+            span {
+                margin-left: 10px;
+            }
+        &::after{
+            position: absolute;
+            content: "";
+            height: 3px;
+            width: 200px;
+            background-color: #DBA39A;
+            bottom: 0;
+            left:50%;
+            transform: translateX(-50%)
+
+        }
+        }
+
+    }
+}
+
+// lineup-item.html
+.lineup-item {
+    h2 {
+        display: inline-block;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #DBA39A;
+
+    }
+
+    .lineup-content {
+        display: flex;
+
+        img {
+            width: 60%;
+        }
+
+        .item-text {
+            width: 40%;
+            margin-left: 50px;
+
+            p {
+                text-align: left;
+
+                span {
+                    display: inline-block;
+                    margin: 5px 0;
+
+
+                }
+
+                .price {
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    margin-top: 20px;
+                    border-bottom: 2px dashed #776B5D;
+                }
+            }
+
+        }
+
+        .buy {
+            margin-top: 50px;
+
+            p {
+                display: inline-block;
+                padding-right: 30px;
+
+            }
+
+            select {
+                border: solid 1px #776B5D;
+                width: 50%;
+                background-color: #fff;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+
+// contact.html
+.contact-page {
+    p {
+        margin-bottom: 70px;
+    }
+
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        dt {
+            width: 25%;
+            margin-bottom: 40px;
+        }
+
+        dd {
+            width: 75%;
+            margin-bottom: 10px;
+
+            input {
+                width: 100%;
+                border: solid 1px #776B5D;
+                background-color: #fff;
+
+            }
+
+            textarea {
+                width: 100%;
+                border: solid 1px #776B5D;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+/*-------------------------------------------
+トップへ戻るボタン
+-------------------------------------------*/
+/*
+右下に固定で配置
+表示・非表示の切り替えはjQueryで行うため、詳細は「main.js」のコメントを参照
+*/
+.to-top {
+    width: 50px;
+    height: 50px;
+    background-color: #776B5D;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+}
+
+/*
+  中の三角は疑似要素で作成
+  */
+.to-top::after {
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #fff;
+    position: relative;
+    left: 17px;
+    bottom: 3px;
+}
+
+
+// レスポンシブ
+@media(max-width:960px) {
+
+
+    // title
+    .section-title {
+        text-align: center;
+        margin: 50px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        border-bottom: 1px solid #776B5D;
+
+        span {
+            display: none;
+        }
+    }
+
+
+    // header
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+
+        nav {
+            width: 500px;
+            background: #776B5D;
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            left: -500px;
+            bottom: 0;
+            opacity: 0;
+            overflow-y: auto;
+            transition: 0.5s;
+            z-index: 20;
+
+            a {
+                color: #fff;
+            }
+
+            ul {
+                flex-direction: column;
+
+                li {
+                    margin-bottom: 14px;
+                }
+            }
+        }
+
+        .toggle-btn {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: fixed;
+            top: 22px;
+            right: 18px;
+            transition: 0.5s;
+            z-index: 20;
+
+            span {
+                width: 30px;
+                height: 2px;
+                background-color: #776B5D;
+                border-radius: 4px;
+                display: block;
+                position: absolute;
+                left: 0;
+                transition: 0.5s;
+            }
+
+            /*
+            1本目の線の位置を設定
+            */
+            span:nth-child(1) {
+                top: 10px;
+            }
+
+            /*
+            2本目の線の位置を設定
+            */
+            span:nth-child(2) {
+                top: 18px;
+            }
+
+
+        }
+
+
+
+        #mask {
+            display: none;
+            transition: .5s;
+
+            .open {
+                /* display: none;から出現 */
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #000;
+                opacity: 0.8;
+                z-index: 10;
+                cursor: pointer;
+            }
+        }
+
+
+        .open {
+            #navi {
+                left: 0;
+                opacity: 0.8;
+
+            }
+
+            span {
+                background-color: #fff;
+            }
+
+            span:nth-child(1) {
+                transform: translateY(4px) rotate(-45deg);
+            }
+
+            span:nth-child(2) {
+                transform: translateY(-4px) rotate(45deg);
+            }
+
+        }
+    }
+
+    .open {
+        #navi {
+            left: 0;
+            opacity: 0.8;
+
+        }
+
+        span {
+            background-color: #fff;
+        }
+
+        span:nth-child(1) {
+            transform: translateY(4px) rotate(-45deg);
+        }
+
+        span:nth-child(2) {
+            transform: translateY(-4px) rotate(45deg);
+        }
+
+
+        #mask {
+            /* display: none;から出現 */
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.8;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+    }
+
+    // main-visual
+    .mainvisual {
+        video {
+            height: 90vh;
+        }
+
+    }
+
+
+    // content
+    .content {
+        flex-direction: column;
+        margin: 0 50px;
+
+
+        img {
+            width: 100%;
+        }
+
+        .text {
+            width: 100%;
+            margin: 50px 0;
+
+        }
+    }
+
+    //concept
+    #concept {
+        img {
+            width: 100%;
+            height: 400px;
+        }
+    }
+
+    // news
+    #news {
+
+        dl {
+            flex-direction: column;
+            margin: 0;
+
+
+            dt {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+                border-bottom: none;
+            }
+
+            dd {
+                width: 100%;
+                text-align: center;
+                padding-bottom: 10px;
+                display: inline;
+
+
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 400px;
+        }
+    }
+
+    #contact {
+        position: relative;
+        margin: 100px 0;
+
+
+        .contact-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            /* 画像の中央に配置するための変更 */
+            h1 {
+                color: #fff;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+
+    //concept.html
+    .concept-page {
+        .concept-content {
+            flex-direction: column;
+
+            img {
+                display: none;
+            }
+        }
+
+
+    }
+
+    //news.page
+    .news-page {
+        .news-item {
+            flex-direction: column;
+            margin-bottom: 80px;
+
+            img {
+                display: none;
+            }
+        }
+
+        .news-text {
+            width: 100%;
+
+        }
+
+
+    }
+
+    // contact.html
+    .contact-page {
+
+        dl {
+            flex-direction: column;
+
+            dt {
+                width: 100%;
+            }
+
+            dd {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+
+                textarea {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    // lineup.html
+    .lineup-page {
+        ul {
+            flex-direction: column;
+
+            li {
+                width: 100%;
+            }
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    // lineup-item.html
+    .lineup-item {
+        .lineup-content {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .item-text {
+                width: 70%;
+                margin: 20px auto;
+
+            }
+
+
+        }
+    }
+}
